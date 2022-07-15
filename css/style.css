@@ -149,15 +149,14 @@ button:hover{
   position: relative;
 }
 
-.navbar-text span {
+.text-thin {
   font-size: 20px;
-}
-
-.navbar-text span:nth-child(1){
   font-weight: 100;
+  letter-spacing: 0.06em;
 }
 
-.navbar-text span:nth-child(2){
+.text-medium {
+  font-size: 20px;
   letter-spacing: 0.2em;
   font-weight: 500;
 }
@@ -170,6 +169,11 @@ button:hover{
   left:0;
   bottom: 0;
   right: 0;
+}
+
+.navbar2 {
+  width: 100%;
+  display: none;
 }
 
 .home {
@@ -237,6 +241,11 @@ button:hover{
   justify-content: center;
   align-items: center;
 
+}
+
+.col-12{
+  width: 100%;
+  margin-top: 40px;
 }
 
 
@@ -443,11 +452,71 @@ button:hover{
   color:#333;
   transition: .5s;
 }
+
 .footer{
   width: 100%;
   height: 500px;
   padding: 50px 0;
   background-color: white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:40px;
+}
+
+.col-4 {
+  width:33%;
+  padding:0 15px;
+}
+
+.card {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.card address {
+  margin-top: 30px;
+  text-align: center;
+  line-height:1.7;
+  
+}
+
+.card a {
+  font-weight: 300;
+  color:#5a5a5a;
+}
+
+
+.card i {
+  color:var(--primary);
+  font-size: 77px;
+  text-align: center;
+}
+
+.footer p {
+  color:#5a5a5a;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #5a5a5a;
+}
+
+.footer a:hover{
+  color: var(--primary);
+  transition: .3s;
 }
 
 .map{

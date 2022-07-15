@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_md.css">
+  <link rel="stylesheet" href="./css/style_xl.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -23,10 +25,20 @@
     <button><i class="fa-solid fa-bars"></i></button>
     <div class="navbar-text">
       <a href="#">
-        <span>EXTERIOR</span>
-        <span>DESIGN</span>
+        <span class="text-thin">EXTERIOR</span>
+        <span class="text-medium">DESIGN</span>
       </a>
     </div>
+  </div>
+  <div class="navbar2">
+    <ul>
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>SERVICES</li>
+      <li>NEWS</li>
+      <li>GALLERY</li>
+      <li>CONTACTS</li>
+    </ul>
   </div>
   <div class="home">
     <h2>LET US CREATE THE BEST OUTDOOR SPACE</h2>
@@ -40,19 +52,19 @@
     <div class="container">
       <h2>WELCOME</h2>
       <hr class="hr-white">
-      <div>
+      <div class="col-12">
         <p>Many people face some difficulties while decorating their homes. The matter is that the beginners don’t know
           how to do it right and do it in their own way. As a result, they get a tacky look that has nothing common with
           style. Fortunately, you can learn some secrets and recommendations from the design professionals right from
           the comfort of your chair.</p>
       </div>
-      <div>
+      <div class="col-12 col-4-md">
         <p>Exterior is the face of your home, in some sort it is a reflection of you, and it is very important to have
           your home, flat, mansion or whatever it is, look striking. Of course, you can pay thousands of dollars to the
           designer, but there is no guarantee that he will get the point and provide you with the top quality service.
         </p>
       </div>
-      <div>
+      <div class="col-12">
         <p>There is also another option - to do everything by yourself. Although, this may be a tricky mission as there
           are many specifications that should be taken into account while developing the design. Learn some of them and
           you are good to go. In this way, you can save yourself a great deal of money.</p>
@@ -170,7 +182,37 @@
     <input id="btn" class="btn-white" type="button" value="Read More" style="margin-top:35px">
   </div>
   <div class="footer">
-    <div class="container"></div>
+    <div class="container">
+      <h2 style="color:#333">CONTACT US</h2>
+      <hr class="hr-primary">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <i class="fa-solid fa-house"></i>
+            <address>
+              <a href="#">9863 - 9867 Mill Road,<br>Cambridge, MG09 99HT</a>
+            </address>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <i class="fa-solid fa-file"></i>
+            <address>
+              <a href="#">+1 800 603 6035</a>
+            </address>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <i class="fa-solid fa-envelope"></i>
+            <address>
+              <a href="#">mail@demolink.org</a>
+            </address>
+          </div>
+        </div>
+      </div>
+      <p>Exterior design &copy; 2022 &nbsp; <a href="">Privacy Policy</a></p>
+    </div>
   </div>
   <!-- 地圖 -->
   <div class="map">

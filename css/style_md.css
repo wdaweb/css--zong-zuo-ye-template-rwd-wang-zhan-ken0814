@@ -1,0 +1,62 @@
+* {
+  --primary:#ffc72b;
+  box-sizing: border-box;
+}
+
+
+@media (min-width:768px){
+  .container {
+    width: 970px;
+    padding: 100px 15px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 1.32;
+    letter-spacing: .36em;
+  }
+
+  h6 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  p {
+    text-align:left;
+  }
+
+  .navbar {
+    height: 180px;
+    margin: 40px 0;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  .navbar-text {
+    width: 100%;
+    height: 70px;
+  }
+
+  .text-thin {
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-medium {
+    width: 133px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+    background:var(--primary);
+  }
+}
