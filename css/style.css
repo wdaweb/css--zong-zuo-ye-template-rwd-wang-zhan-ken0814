@@ -127,6 +127,43 @@ a {
   transition: .5s;
 }
 
+/* aside-------------------------------------------------------- */
+.aside {
+  width: 270px;
+  height: calc(100vh - 56px);
+  position: fixed;
+  top: 56px;
+  left: -270px;
+  background: var(--primary);
+  z-index: 1000;
+  padding: 10px 4px;
+  box-shadow: 0 0 2px rgba(57, 57, 57, 0.68);
+}
+
+.aside li {
+  width: 262px;
+  height: 44px;
+  padding: 0px 15px;
+  color: #5a5a5a;
+  line-height: 44px;
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+.aside li:first-child {
+  background: #fff;
+}
+
+.aside li:hover {
+  background-color: #fff;
+  color: var(--primary);
+  transition: .5s;
+}
+
+.aside_position {
+  left: 0px;
+}
+
 /* navbar------------------------------------------------------- */
 .navbar {
   width: 100%;
@@ -138,7 +175,7 @@ a {
   align-items: center;
   padding: 4px;
   z-index: 1000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .navbar button {
