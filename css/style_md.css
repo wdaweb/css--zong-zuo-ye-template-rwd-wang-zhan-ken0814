@@ -1,14 +1,24 @@
 * {
-  --primary:#ffc72b;
+  --primary: #ffc72b;
   box-sizing: border-box;
 }
 
 
-@media (min-width:768px){
+@media (min-width:768px) {
   .container {
-    width: 970px;
-    padding: 100px 15px;
+    width: 750px;
+    padding: 35px 15px;
+    max-width: 750px;
+    /* align-items: flex-start; */
   }
+
+  .container2 {
+    width: 750px;
+    padding: 35px 15px;
+    max-width: 750px;
+    align-items: flex-start;
+  }
+
 
   h2 {
     font-size: 32px;
@@ -22,12 +32,18 @@
   }
 
   p {
-    text-align:left;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  hr {
+    margin: 10px 0px;
   }
 
   .navbar {
     height: 180px;
     margin: 40px 0;
+    position: absolute;
   }
 
   .navbar button {
@@ -57,6 +73,92 @@
     left: 50%;
     top: 56%;
     transform: translate(-50%, -50%);
-    background:var(--primary);
+    background: var(--primary);
+  }
+
+  .home h2 {
+    top: 49%;
+  }
+
+  .navbar2 {
+    display: block;
+    position: absolute;
+    top: 25%;
+  }
+
+  .navbar2 li:not(:first-child):hover {
+    background: var(--primary);
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .section01-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  .col-4-md {
+    width: 33%;
+    height: 330px;
+    margin: 0 15px;
+  }
+
+  .section03 {
+    justify-content: flex-start;
+    height: 365px;
+    padding-top: 25px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .image img {
+    width: 33.3333%;
+    height: 150px;
+  }
+
+  .section04-md-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .section04 hr {
+    margin-bottom: 0;
+  }
+
+  .section04 input {
+    margin-top: -14px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    height: 275px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .col-md-6 h6 {
+    margin: 20px 0;
+  }
+
+
+  .list2 {
+    flex-wrap: nowrap;
+  }
+
+  .section06 li:nth-child(4) {
+    margin-left: 0px;
+  }
+
+  .section06 li:nth-child(5) {
+    margin-right: 0px;
+  }
+
+  .footer p {
+    margin-top: 10px;
   }
 }

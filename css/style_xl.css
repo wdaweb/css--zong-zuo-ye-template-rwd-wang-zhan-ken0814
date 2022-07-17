@@ -1,0 +1,130 @@
+* {
+  --primary: #ffc72b;
+  box-sizing: border-box;
+}
+
+@media (min-width:1200px) {
+
+  p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .container {
+    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .container2 {
+    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .navbar {
+    width: 342px;
+    height: 180px;
+    top: 0;
+    left: 0;
+    margin: 0px;
+  }
+
+  .navbar2 {
+    width: 49vw;
+    top: 8%;
+    right: 0;
+    margin-right: 30px;
+  }
+
+  .home h2 {
+    font-size: 32px;
+    letter-spacing: .4em;
+    top: 53%;
+  }
+
+  #home_text {
+    bottom: 16%;
+  }
+
+  #home_text span {
+    margin-bottom: 60px;
+  }
+
+  .section01 hr {
+    margin-bottom: 40px;
+  }
+
+  .section01 #btn {
+    margin-top: 30px;
+  }
+
+  .col-4-xl {
+    height: 154px;
+  }
+
+  .section02 {
+    height: 120vh;
+  }
+
+  .section02::after {
+    height: 1050px;
+  }
+
+  .section02 p {
+    width: 470px;
+  }
+
+  .section02 #btn {
+    margin-top: 80px
+  }
+
+  .section03 {
+    height: 515px;
+  }
+
+  .section03 .list {
+    width: 58%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 58%;
+  }
+
+  .section03 img {
+    height: 258px;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+    margin-top: 80px;
+  }
+
+  .section05 {
+    height: 120vh;
+    align-items: flex-end;
+  }
+
+  .section05::after {
+    height: 1050px;
+  }
+
+  .section05 p {
+    width: 470px;
+  }
+
+  .section05 #btn {
+    margin-top: 80px
+  }
+
+  .section05 .container2 {
+    width: 50%;
+  }
+
+  .list2 {
+    width: 70%;
+    min-width: none;
+  }
+
+  .map {
+    height: 537px;
+  }
+}

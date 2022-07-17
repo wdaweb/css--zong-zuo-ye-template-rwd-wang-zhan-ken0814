@@ -1,15 +1,15 @@
 * {
-  --primary:#ffc72b;
+  --primary: #ffc72b;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   transform: 5s;
 }
 
-.container{
+.container {
   width: 480px;
   /* height:500px; */
   padding: 0 15px;
@@ -17,7 +17,18 @@ body{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 2;
+}
 
+.container2 {
+  width: 480px;
+  /* height:500px; */
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
 }
 
 h2 {
@@ -31,7 +42,7 @@ h2 {
 h6 {
   font-size: 18px;
   font-weight: 400;
-  color:var(--primary)
+  color: var(--primary)
 }
 
 hr {
@@ -42,44 +53,44 @@ hr {
   border: none;
 }
 
-p{
+p {
   text-align: center;
   font-weight: 300;
   line-height: 1.7;
 }
 
-a { 
+a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 /* hr 樣式 */
-.hr-white{
+.hr-white {
   background: white;
 }
 
-.hr-primary{
+.hr-primary {
   background: var(--primary);
 }
 
 /* btn 樣式 */
-.btn-transparent{
+.btn-transparent {
   width: 215px;
   height: 75px;
   background-color: transparent;
-  border:2px solid white;
+  border: 2px solid white;
   border-radius: 40px;
   border-color: #fff;
-  color:#fff;
+  color: #fff;
   line-height: 75px;
   letter-spacing: 0.25em;
 }
 
 
-.btn-transparent:hover{
+.btn-transparent:hover {
   border-color: var(--primary);
   color: var(--primary);
-  cursor:pointer;
+  cursor: pointer;
   transition: .5s;
 }
 
@@ -87,13 +98,13 @@ a {
   width: 180px;
   height: 75px;
   background: #fff;
-  color:#333;
+  color: #333;
   font-size: 14px;
   border: 2px solid white;
   border-radius: 40px;
 }
 
-.btn-white:hover{
+.btn-white:hover {
   cursor: pointer;
   background-color: var(--primary);
   color: #fff;
@@ -104,13 +115,13 @@ a {
   width: 180px;
   height: 75px;
   background: var(--primary);
-  color:#fff;
+  color: #fff;
   font-size: 14px;
   border: 2px solid var(--primary);
   border-radius: 40px;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   cursor: pointer;
   background-color: transparent;
   transition: .5s;
@@ -127,10 +138,10 @@ a {
   align-items: center;
   padding: 4px;
   z-index: 1000;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.navbar button{
+.navbar button {
   width: 48px;
   height: 48px;
   border: none;
@@ -138,7 +149,7 @@ a {
   background: var(--primary);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
@@ -163,28 +174,49 @@ button:hover{
 
 .navbar-text a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   bottom: 0;
   right: 0;
 }
 
 .navbar2 {
-  width: 100%;
+  width: 100vw;
   display: none;
+  z-index: 2;
 }
+
+.navlist {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar2 li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.35em;
+}
+
+.navbar2 li:first-child {
+  color: var(--primary)
+}
+
+
 
 .home {
   width: 100%;
   height: 100vh;
   background: url('https://livedemo00.template-help.com/wt_58289/images/slide-03.jpg') no-repeat left top/cover;
   position: relative;
-  
+
 }
 
-.home::after{
+.home::after {
   content: '';
   position: absolute;
   top: 0;
@@ -197,9 +229,8 @@ button:hover{
 
 .home h2 {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 35.5%;
+  transform: translateY(-50%);
   z-index: 2;
   width: 100%;
   text-align: center;
@@ -208,17 +239,15 @@ button:hover{
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.08em;
-  display: block;
-  z-index: 2;
 }
 
-#home_text{
+#home_text {
   position: absolute;
   left: 50%;
-  bottom:30%;
-  transform: translate(-50%,-50%);
+  bottom: 23.5%;
+  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -233,9 +262,9 @@ button:hover{
   margin-bottom: 25px;
 }
 
-.section01{
+.section01 {
   width: 100%;
-  padding:45px 0;
+  padding: 45px 0;
   background: url('https://livedemo00.template-help.com/wt_58289/images/bg-image01.jpg') no-repeat center/cover;
   display: flex;
   justify-content: center;
@@ -243,47 +272,54 @@ button:hover{
 
 }
 
-.col-12{
+.col-12 {
   width: 100%;
   margin-top: 40px;
+}
+
+.section01 #btn {
+  margin-top: 80px;
 }
 
 
 .section02 {
   width: 100%;
   height: 768px;
-  background-image: url('https://livedemo00.template-help.com/wt_58289/images/parallax1.jpg') ;
-  background-attachment:fixed;
-  display:flex;
+  background-image: url('https://livedemo00.template-help.com/wt_58289/images/parallax1.jpg');
+  background-attachment: fixed;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
 
-.section02 div {
+/* .section02 div {
   position: relative;
   width: 480px;
   height: 690px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1px 15px;
   z-index: 1;
-}
+} */
 
-.section02::after{
+.section02::after {
   content: '';
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 690px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(57, 57, 57, 0.68);
   z-index: 0;
 }
 
+.section02 #btn {
+  margin-top: 40px
+}
 
 .section03 {
   width: 100%;
@@ -299,7 +335,7 @@ button:hover{
   width: 87%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   min-width: 80%;
 }
 
@@ -311,39 +347,39 @@ button:hover{
   line-height: 30px;
   text-align: center;
   margin-top: 25px;
-  padding:5px 14px;
+  padding: 5px 14px;
 }
 
-.section03 li:nth-child(1){
+.section03 li:nth-child(1) {
   background: #fff;
-  color:#333;
+  color: #333;
 }
 
-.section03 li:hover{
+.section03 li:hover {
   cursor: pointer;
 }
 
-.section03 li:not(:first-child):hover{
+.section03 li:not(:first-child):hover {
   background: #fff;
-  color:#333;
+  color: #333;
   transition: .5s;
 }
 
-.image{
+.image {
   width: 100%;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-.image img{
+.image img {
   width: 50%;
   height: 50%;
   object-fit: cover;
 }
 
-.image img:hover{
+.image img:hover {
   cursor: pointer;
   background-color: rgba(57, 57, 57, 0.68);
   z-index: 100;
@@ -357,11 +393,15 @@ button:hover{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding:30px 0;
+  padding: 30px 0;
 }
 
-.section04 .container div{
-  width: 480px;
+.section04 hr {
+  margin-bottom: 60px;
+}
+
+.col {
+  /* width: 480px; */
   height: 220px;
   padding: 0 15px;
   display: flex;
@@ -371,47 +411,53 @@ button:hover{
   margin-top: 20px;
 }
 
-.section04 span{
+.section04 span {
   font-size: 50px;
 }
 
-.section04 a:hover{
-  text-decoration: underline  #fff 2px ;
+.section04 a:hover {
+  text-decoration: underline #fff 2px;
   transition: .5s;
 }
 
-.section05{
+.section04 input {
+  margin-top: 80px
+}
+
+.section05 {
   width: 100%;
   height: 768px;
   background: url('https://livedemo00.template-help.com/wt_58289/images/parallax2.jpg') no-repeat center/cover;
   background-attachment: fixed;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position:relative;
-  z-index:1;
+  position: relative;
+  z-index: 1;
 }
 
-.section05::after{
+.section05::after {
   content: '';
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 690px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(57, 57, 57, 0.68);
   z-index: -1;
 }
 
-
+.section05 #btn {
+  margin-top: 40px
+}
 
 
 .section06 {
   width: 100%;
   height: 400px;
   background-image: url('https://livedemo00.template-help.com/wt_58289/images/bg-image01.jpg');
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -425,7 +471,7 @@ button:hover{
   line-height: 30px;
   text-align: center;
   margin-top: 25px;
-  padding:5px 14px;
+  padding: 5px 14px;
 
 }
 
@@ -437,28 +483,28 @@ button:hover{
   min-width: 80%;
 }
 
-.section06 li:nth-child(4){
-  margin-left:75px;
+.section06 li:nth-child(4) {
+  margin-left: 75px;
 }
 
-.section06 li:nth-child(5){
-  margin-right:75px;
+.section06 li:nth-child(5) {
+  margin-right: 75px;
 }
 
 
-.section06 li:hover{
-  cursor:pointer;
+.section06 li:hover {
+  cursor: pointer;
   background: #fff;
-  color:#333;
+  color: #333;
   transition: .5s;
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 500px;
   padding: 50px 0;
   background-color: white;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -469,19 +515,19 @@ button:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .col-4 {
-  width:33%;
-  padding:0 15px;
+  width: 33%;
+  padding: 0 15px;
 }
 
 .card {
   width: 100%;
   height: 220px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: flex-start;
   align-self: center;
 }
@@ -489,24 +535,24 @@ button:hover{
 .card address {
   margin-top: 30px;
   text-align: center;
-  line-height:1.7;
-  
+  line-height: 1.7;
+
 }
 
 .card a {
   font-weight: 300;
-  color:#5a5a5a;
+  color: #5a5a5a;
 }
 
 
 .card i {
-  color:var(--primary);
+  color: var(--primary);
   font-size: 77px;
   text-align: center;
 }
 
 .footer p {
-  color:#5a5a5a;
+  color: #5a5a5a;
   margin-top: 30px;
 }
 
@@ -514,12 +560,12 @@ button:hover{
   color: #5a5a5a;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: var(--primary);
   transition: .3s;
 }
 
-.map{
+.map {
   width: 100%;
   height: 300px;
 }
